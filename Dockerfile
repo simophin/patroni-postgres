@@ -1,4 +1,4 @@
-FROM postgres:16.2-bookworm
+FROM tensorchord/pgvecto-rs:pg16-v0.2.0
 
 ENV VENV_HOME="/venv"
 
