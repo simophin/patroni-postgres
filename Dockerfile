@@ -12,7 +12,11 @@ RUN apt update -y && \
     postgresql-16-repack \
     postgresql-16-cron \
     python3-venv && \
+    gcc && \
+    python3-dev && \
     python3 -m venv ${VENV_HOME} && \
     ${VENV_HOME}/bin/pip install patroni psycopg2-binary python-etcd && \
     apt clean && \
+    apt remove -y gcc python3-dev && \
+    apt auto-remove -y && \
     rm -rf /var/lib/apt/lists/*
