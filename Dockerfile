@@ -1,4 +1,4 @@
-FROM tensorchord/pgvecto-rs:pg16-v0.2.0
+FROM tensorchord/pgvecto-rs:pg16-v0.2.1
 
 ENV VENV_HOME="/venv"
 
