@@ -73,5 +73,3 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/arm64,linux/amd64
-
-           run: echo "${TAGS}" | xargs -I {} cosign sign --yes {}@${DIGEST}
