@@ -8,7 +8,6 @@ RUN apt update -y && \
     apt install -y \
     postgresql-postgis \
     postgresql-contrib \
-    postgresql-16-pgvector \
     postgresql-16-repack \
     postgresql-16-cron \
     python3-venv \
