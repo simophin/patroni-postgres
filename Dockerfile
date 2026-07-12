@@ -1,4 +1,4 @@
-FROM docker.io/tensorchord/vchord-postgres:pg18-v0.5.3
+FROM docker.io/tensorchord/vchord-postgres:pg18-v1.1.1
 
 ENV VENV_HOME="/venv"
 
