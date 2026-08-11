@@ -1,15 +1,14 @@
-FROM tensorchord/pgvecto-rs:pg16-v0.3.0
+FROM docker.io/tensorchord/vchord-postgres:pg18-v1.1.1
 
 ENV VENV_HOME="/venv"
 
 ENV PATH="${VENV_HOME}/bin:${PATH}"
 
 RUN apt update -y && \
-    apt install -y \
+    apt install --no-install-recommends -y \
     postgresql-postgis \
-    postgresql-contrib \
-    postgresql-16-repack \
-    postgresql-16-cron \
+    postgresql-18-repack \
+    postgresql-18-cron \
     python3-venv \
     gcc \
     pgbackrest \
